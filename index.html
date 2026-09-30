@@ -269,10 +269,8 @@
                         <div>
                             <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1.5">Selected Vehicle</label>
                             <select id="quoteVehicle" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 appearance-none cursor-pointer transition-all">
-                                <option value="xt6">Cadillac XT6 Luxury Crossover (Flagship)</option>
-                                <option value="escalade">Cadillac Escalade ESV (Full SUV)</option>
-                                <option value="sedan">Executive Luxury Sedan</option>
-                                <option value="sprinter">Mercedes-Benz Sprinter Jet Van</option>
+                                <option value="xt6">Cadillac XT6 Lux</option>
+                                <option value="escalade">Chevy Suburban SUV</option>
                             </select>
                         </div>
 
@@ -368,7 +366,7 @@
                     </div>
                     <div class="bg-onyx-900 p-4 rounded-xl border border-onyx-800">
                         <span class="text-[10px] text-gray-500 uppercase block font-semibold">Assigned Vehicle</span>
-                        <span id="resVehicle" class="text-sm font-bold text-white">Cadillac XT6 (Black / Gold Trim)</span>
+                        <span id="resVehicle" class="text-sm font-bold text-white">Cadillac XT6 (Black)</span>
                     </div>
                 </div>
             </div>
@@ -389,11 +387,11 @@
                 <div>
                     <div class="flex justify-between items-start mb-4">
                         <span class="bg-gold-500/10 text-gold-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-gold-500/20">The Loop ⮂ O'Hare (ORD)</span>
-                        <span class="text-white font-serif font-bold text-2xl">$160</span>
+                        <span class="text-white font-serif font-bold text-2xl">$140</span>
                     </div>
                     <h3 class="font-semibold text-white text-lg mb-2">Downtown Chicago to O'Hare</h3>
                     <p class="text-xs text-gray-400 leading-relaxed">
-                        Effortless business transit. Includes terminal meet, baggage assistance, and expedited express lane routing inside our flagship Cadillac XT6.
+                        Effortless business transit. Includes terminal meet, baggage assistance, and expedited express lane routing inside our Cadillac XT6.
                     </p>
                 </div>
                 <button onclick="prefillRoute('The Loop, Downtown Chicago', 'O\'Hare International Airport (ORD)', 'airport', 'xt6')" class="mt-6 w-full py-3 bg-onyx-950 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-bold text-xs uppercase tracking-wider rounded-lg border border-gold-500/30 transition-all">
@@ -423,7 +421,7 @@
                 <div>
                     <div class="flex justify-between items-start mb-4">
                         <span class="bg-gold-500/10 text-gold-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-gold-500/20">Magnificent Mile ⮂ MDW</span>
-                        <span class="text-white font-serif font-bold text-2xl">$145</span>
+                        <span class="text-white font-serif font-bold text-2xl">$120</span>
                     </div>
                     <h3 class="font-semibold text-white text-lg mb-2">Michigan Ave to Midway Airport</h3>
                     <p class="text-xs text-gray-400 leading-relaxed">
@@ -450,16 +448,10 @@
             <!-- Fleet Vehicle Tabs -->
             <div class="flex flex-wrap justify-center gap-3 mb-12">
                 <button onclick="switchFleet('xt6')" id="tab-xt6" class="fleet-tab bg-gold-500 text-onyx-950 font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-all">
-                    Cadillac XT6 (Flagship)
+                    Cadillac XT6 LUX
                 </button>
                 <button onclick="switchFleet('escalade')" id="tab-escalade" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
-                    Cadillac Escalade ESV
-                </button>
-                <button onclick="switchFleet('sedan')" id="tab-sedan" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
-                    Executive Sedan
-                </button>
-                <button onclick="switchFleet('sprinter')" id="tab-sprinter" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
-                    Mercedes Sprinter Van
+                    Chevy Suburban SUV 
                 </button>
             </div>
 
@@ -480,7 +472,7 @@
                                 Primary Fleet Standard
                             </span>
                             <h3 id="fleetTitle" class="font-serif text-2xl sm:text-3xl font-bold text-white mt-2">
-                                Cadillac XT6 Luxury Crossover
+                                Cadillac XT6 LUX
                             </h3>
                         </div>
 
@@ -504,7 +496,7 @@
                             </div>
                             <div class="bg-onyx-900 p-3.5 rounded-xl border border-onyx-800">
                                 <span class="text-[10px] text-gray-500 uppercase block font-semibold">Amenities</span>
-                                <span id="fleetAmenities" class="text-white font-semibold text-sm">Wi-Fi & Chilled Water</span>
+                                <span id="fleetAmenities" class="text-white font-semibold text-sm">Wi-Fi & Water</span>
                             </div>
                         </div>
 
