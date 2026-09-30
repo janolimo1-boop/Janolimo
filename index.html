@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jano Limo | Premium Chicago Chauffeur & Luxury Limousine Service</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fbf8eb',
+                            100: '#f5edd1',
+                            200: '#eadd9e',
+                            300: '#dec763',
+                            400: '#d3b03b',
+                            500: '#c59b27',
+                            600: '#a3791d',
+                            700: '#805b1a',
+                            800: '#64471a',
+                            900: '#4d3718',
+                            950: '#30200c',
+                        },
+                        onyx: {
+                            50: '#f4f4f6',
+                            100: '#e8e9ec',
+                            200: '#ced1d9',
+                            300: '#a5abb9',
+                            400: '#757e93',
+                            500: '#555e75',
+                            600: '#434b5f',
+                            700: '#373d4e',
+                            800: '#2b303e',
+                            900: '#111317',
+                            950: '#0a0b0d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styles -->
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f5edd1 0%, #d3b03b 50%, #805b1a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #c59b27 0%, #d3b03b 50%, #805b1a 100%);
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(197, 155, 39, 0.25);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0b0d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c59b27;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a3791d;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-glow {
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-onyx-950 text-gray-200 font-sans selection:bg-gold-500 selection:text-onyx-950 overflow-x-hidden antialiased">
+
+    <!-- Top Announcement & Quick Contact Bar -->
+    <div class="bg-onyx-900 border-b border-onyx-800 text-xs py-2.5 px-4 md:px-8 flex flex-wrap justify-between items-center z-50 relative">
+        <div class="flex items-center space-x-6">
+            <span class="flex items-center text-gray-300">
+                <i class="fa-solid fa-phone text-gold-400 mr-2"></i>
+                <a href="tel:+17736329525" class="hover:text-gold-400 transition-colors font-semibold">(773) 632-9525</a>
+            </span>
+            <span class="hidden sm:flex items-center text-gray-300">
+                <i class="fa-solid fa-envelope text-gold-400 mr-2"></i>
+                <a href="mailto:Janolimo1@gmail.com" class="hover:text-gold-400 transition-colors">Janolimo1@gmail.com</a>
+            </span>
+            <span class="hidden lg:flex items-center text-gray-400">
+                <i class="fa-solid fa-clock text-gold-400 mr-2"></i>
+                <span>24/7 VIP Chauffeur Dispatch</span>
+            </span>
+        </div>
+        <div class="flex items-center space-x-4 text-gray-400">
+            <span class="flex items-center text-gold-400 font-medium text-[11px] sm:text-xs">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span>
+                Chicagoland Chauffeur Fleet Active
+            </span>
+            <a href="#tracker" class="hidden sm:inline-block text-[11px] bg-onyx-800 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-semibold px-2.5 py-1 rounded transition-colors">
+                <i class="fa-solid fa-plane-arrival mr-1"></i> Flight Tracker
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 bg-onyx-950/90 backdrop-blur-md border-b border-onyx-900 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="relative w-11 h-11 border border-gold-400 rounded-full flex items-center justify-center bg-onyx-900 group-hover:border-gold-300 transition-colors">
+                    <span class="font-serif text-gold-400 text-2xl font-bold tracking-wider">J</span>
+                    <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-gold-500 rounded-full border-2 border-onyx-950"></div>
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-widest text-white block uppercase leading-none">JANO <span class="text-gold-400">LIMO</span></span>
+                    <span class="text-[9px] uppercase tracking-[0.3em] text-gold-300/80 block mt-1 font-semibold">Chicago's Premier Service</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#services" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">Services</a>
+                <a href="#fleet" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">Our Fleet</a>
+                <a href="#routes" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">Flat Rates</a>
+                <a href="#about" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">Why Jano</a>
+                <a href="#reviews" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">Reviews</a>
+                <a href="#faq" class="text-gray-300 hover:text-gold-400 transition-colors font-medium text-xs tracking-wider uppercase">FAQ</a>
+            </nav>
+
+            <!-- Reservation Button & Mobile Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="#booking" class="hidden sm:inline-flex items-center bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-onyx-950 px-6 py-2.5 rounded-full font-bold tracking-wider text-xs uppercase hover:shadow-[0_0_20px_rgba(197,155,39,0.5)] transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-regular fa-calendar-check mr-2 text-sm"></i> Reserve Ride
+                </a>
+                <button id="mobileMenuBtn" class="md:hidden text-white hover:text-gold-400 focus:outline-none transition-colors p-2" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-onyx-900 border-b border-onyx-800 transition-all duration-300">
+            <div class="px-4 pt-3 pb-6 space-y-3">
+                <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">Services</a>
+                <a href="#fleet" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">Our Fleet</a>
+                <a href="#routes" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">Flat Rates & Routes</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">Why Choose Jano</a>
+                <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">Client Reviews</a>
+                <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gray-300 hover:bg-onyx-800 hover:text-gold-400">FAQ</a>
+                <a href="#tracker" class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-gold-400 hover:bg-onyx-800">Flight & Chauffeur Tracker</a>
+                <a href="#booking" class="mobile-nav-link block text-center bg-gradient-to-r from-gold-600 to-gold-400 text-onyx-950 px-4 py-3 rounded-md font-bold tracking-wider text-xs uppercase shadow-md">
+                    Reserve Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16">
+        <!-- Background Lighting and Graphical Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-radial-gradient from-onyx-900/60 via-onyx-950 to-onyx-950"></div>
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-gold-900/20 rounded-full blur-[120px] animate-pulse-glow"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-gold-700/10 rounded-full blur-[150px]"></div>
+            
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="20%" x2="100%" y2="80%" stroke="#c59b27" stroke-width="1" stroke-dasharray="10 15" />
+                    <line x1="0" y1="50%" x2="100%" y2="50%" stroke="#c59b27" stroke-width="1.5" />
+                    <circle cx="65%" cy="40%" r="160" stroke="#c59b27" stroke-width="0.5" fill="none" />
+                    <circle cx="65%" cy="40%" r="300" stroke="#c59b27" stroke-width="0.5" stroke-dasharray="5 5" fill="none" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-gold-950/80 border border-gold-800/60 rounded-full py-1.5 px-4 text-xs font-semibold tracking-wider text-gold-300 uppercase">
+                    <i class="fa-solid fa-crown text-gold-400"></i>
+                    <span>Chicago's Five-Star Luxury Chauffeur</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    Experience Unrivaled <br class="hidden sm:inline">
+                    <span class="gold-gradient-text">Comfort & Elegance</span>
+                </h1>
+                
+                <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+                    From corporate executives to seamless airport transfers in our flagship <strong class="text-white font-semibold">Cadillac XT6</strong> and executive luxury fleet, Jano Limo delivers absolute punctuality, pristine vehicles, and bespoke hospitality across Chicagoland.
+                </p>
+
+                <!-- Key Advantage Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-2 max-w-md mx-auto lg:mx-0">
+                    <div class="text-center lg:text-left bg-onyx-900/80 p-3 rounded-xl border border-onyx-800">
+                        <span class="block text-2xl font-bold text-gold-400 font-serif">100%</span>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">On-Time Guarantee</span>
+                    </div>
+                    <div class="text-center lg:text-left bg-onyx-900/80 p-3 rounded-xl border border-onyx-800">
+                        <span class="block text-2xl font-bold text-gold-400 font-serif">24/7</span>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">VIP Dispatch</span>
+                    </div>
+                    <div class="text-center lg:text-left bg-onyx-900/80 p-3 rounded-xl border border-onyx-800">
+                        <span class="block text-2xl font-bold text-gold-400 font-serif">Flagship</span>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Cadillac XT6</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="#booking" class="w-full sm:w-auto text-center bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-onyx-950 font-bold px-8 py-4 rounded-lg tracking-wider uppercase text-xs hover:shadow-[0_0_25px_rgba(197,155,39,0.5)] transition-all">
+                        Reserve Your Ride
+                    </a>
+                    <a href="#fleet" class="w-full sm:w-auto text-center border border-gray-600 hover:border-gold-400 hover:text-gold-400 text-white font-bold px-8 py-4 rounded-lg tracking-wider uppercase text-xs transition-all">
+                        Explore Fleet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Interactive Quote Calculator -->
+            <div class="lg:col-span-5 w-full">
+                <div class="bg-onyx-900/90 border border-gold-900/40 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden backdrop-blur-md">
+                    <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold-400/10 rounded-full blur-2xl"></div>
+                    
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h2 class="text-xl font-serif text-white font-bold tracking-wide">Instant Rate Estimator</h2>
+                            <p class="text-xs text-gray-400">Transparent pricing with zero hidden fees</p>
+                        </div>
+                        <span class="bg-gold-500/10 text-gold-400 text-[10px] font-bold px-2.5 py-1 rounded border border-gold-500/20 uppercase">
+                            Live Rates
+                        </span>
+                    </div>
+
+                    <form id="heroQuoteForm" onsubmit="calculateQuote(event)" class="space-y-4">
+                        <!-- Service Selector -->
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1.5">Service Type</label>
+                            <div class="relative">
+                                <select id="quoteService" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 appearance-none cursor-pointer transition-all">
+                                    <option value="airport">O'Hare (ORD) / Midway (MDW) Airport Transfer</option>
+                                    <option value="hourly">Hourly Chauffeur Charter (Min 3 hrs)</option>
+                                    <option value="point">Point-to-Point Executive Ride</option>
+                                    <option value="event">Wedding & Gala Special Event</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gold-400">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle Class Selector -->
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1.5">Selected Vehicle</label>
+                            <select id="quoteVehicle" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 appearance-none cursor-pointer transition-all">
+                                <option value="xt6">Cadillac XT6 Luxury Crossover (Flagship)</option>
+                                <option value="escalade">Cadillac Escalade ESV (Full SUV)</option>
+                                <option value="sedan">Executive Luxury Sedan</option>
+                                <option value="sprinter">Mercedes-Benz Sprinter Jet Van</option>
+                            </select>
+                        </div>
+
+                        <!-- Pickup & Destination -->
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1">Pickup Location</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gold-400">
+                                        <i class="fa-solid fa-location-dot text-xs"></i>
+                                    </span>
+                                    <input type="text" id="quotePickup" placeholder="e.g. Downtown Loop / Magnificent Mile" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-2.5 pl-9 pr-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                                </div>
+                            </div>
+                            <div id="dropoffContainer">
+                                <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1">Destination</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gold-400">
+                                        <i class="fa-solid fa-flag text-xs"></i>
+                                    </span>
+                                    <input type="text" id="quoteDropoff" placeholder="e.g. O'Hare Terminal 1 / Suburbs" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-2.5 pl-9 pr-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date and Metric Grid -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1">Pickup Date</label>
+                                <input type="date" id="quoteDate" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-2.5 px-3 text-xs text-gray-200 focus:outline-none focus:border-gold-400">
+                            </div>
+                            <div>
+                                <label id="quoteMetricLabel" class="block text-[10px] uppercase tracking-wider text-gold-400 font-bold mb-1">Passengers</label>
+                                <input type="number" id="quoteMetric" min="1" max="14" value="2" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-2.5 px-3 text-xs text-gray-200 focus:outline-none focus:border-gold-400">
+                            </div>
+                        </div>
+
+                        <!-- Estimate Action Button -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-onyx-950 font-bold tracking-wider py-3.5 rounded-lg text-xs uppercase transition-all duration-300">
+                            <i class="fa-solid fa-calculator mr-2"></i> Calculate Premium Rate
+                        </button>
+                    </form>
+
+                    <!-- Calculated Result Display -->
+                    <div id="quoteResult" class="hidden mt-5 bg-onyx-950 border border-gold-400/50 rounded-xl p-4 text-center transition-all duration-300">
+                        <span class="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">Estimated Experience Rate</span>
+                        <div class="text-3xl font-serif font-bold text-white mt-1">
+                            $<span id="calculatedPrice">--</span>*
+                        </div>
+                        <p class="text-[11px] text-gold-400 mt-1 font-medium" id="calculatedDetails">Cadillac XT6 Chauffeur</p>
+                        <button onclick="bookCalculatedQuote()" class="mt-3 w-full bg-white hover:bg-gold-400 text-onyx-950 font-bold text-xs py-2.5 px-4 rounded-lg transition-all uppercase tracking-wider">
+                            Apply Quote To Reservation
+                        </button>
+                        <p class="text-[9px] text-gray-500 mt-2">*Includes tolls, airport fees, & premium bottled refreshments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Tracker & Live Chauffeur Status Simulator -->
+    <section id="tracker" class="bg-onyx-900 border-y border-onyx-800 py-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-onyx-950 border border-gold-900/30 rounded-2xl p-6 sm:p-8 shadow-xl">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-1 text-center md:text-left">
+                        <span class="text-gold-400 font-bold text-[10px] uppercase tracking-widest">Real-time Chauffeur Dispatch</span>
+                        <h3 class="font-serif text-2xl font-bold text-white">Flight Arrival & Chauffeur Lookup</h3>
+                        <p class="text-xs text-gray-400">Track your incoming flight or verify your assigned Jano Limo chauffeur</p>
+                    </div>
+                    
+                    <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                        <input type="text" id="flightQuery" placeholder="e.g., UA 240, AA 1042, or JANO-882" class="bg-onyx-900 border border-onyx-800 rounded-lg py-2.5 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600 uppercase">
+                        <button onclick="trackFlightStatus()" class="bg-onyx-800 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-bold text-xs uppercase px-6 py-2.5 rounded-lg transition-all border border-gold-500/30">
+                            Check Status
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Status Result Panel -->
+                <div id="trackerResult" class="hidden mt-6 pt-6 border-t border-onyx-800 grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
+                    <div class="bg-onyx-900 p-4 rounded-xl border border-onyx-800">
+                        <span class="text-[10px] text-gray-500 uppercase block font-semibold">Flight / Res ID</span>
+                        <span id="resFlightNo" class="text-sm font-bold text-white">UA 240</span>
+                    </div>
+                    <div class="bg-onyx-900 p-4 rounded-xl border border-onyx-800">
+                        <span class="text-[10px] text-gray-500 uppercase block font-semibold">Terminal Location</span>
+                        <span id="resTerminal" class="text-sm font-bold text-gold-400">O'Hare Terminal 1 - Gate B6</span>
+                    </div>
+                    <div class="bg-onyx-900 p-4 rounded-xl border border-onyx-800">
+                        <span class="text-[10px] text-gray-500 uppercase block font-semibold">Chauffeur Status</span>
+                        <span id="resChauffeur" class="text-sm font-bold text-emerald-400">Stationed at Lower Level Curb</span>
+                    </div>
+                    <div class="bg-onyx-900 p-4 rounded-xl border border-onyx-800">
+                        <span class="text-[10px] text-gray-500 uppercase block font-semibold">Assigned Vehicle</span>
+                        <span id="resVehicle" class="text-sm font-bold text-white">Cadillac XT6 (Black / Gold Trim)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Popular Chicago Routes -->
+    <section id="routes" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.3em] block mb-2">Pre-Calculated Fixed Pricing</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Popular Chicago Chauffeur Routes</h2>
+            <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Route 1 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-6 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-gold-500/10 text-gold-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-gold-500/20">The Loop ⮂ O'Hare (ORD)</span>
+                        <span class="text-white font-serif font-bold text-2xl">$160</span>
+                    </div>
+                    <h3 class="font-semibold text-white text-lg mb-2">Downtown Chicago to O'Hare</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Effortless business transit. Includes terminal meet, baggage assistance, and expedited express lane routing inside our flagship Cadillac XT6.
+                    </p>
+                </div>
+                <button onclick="prefillRoute('The Loop, Downtown Chicago', 'O\'Hare International Airport (ORD)', 'airport', 'xt6')" class="mt-6 w-full py-3 bg-onyx-950 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-bold text-xs uppercase tracking-wider rounded-lg border border-gold-500/30 transition-all">
+                    Book This Route
+                </button>
+            </div>
+
+            <!-- Route 2 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-6 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-gold-500/10 text-gold-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-gold-500/20">Gold Coast Night Out</span>
+                        <span class="text-white font-serif font-bold text-2xl">$280</span>
+                    </div>
+                    <h3 class="font-semibold text-white text-lg mb-2">3-Hour Evening Chauffeur</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Dedicated private chauffeur for fine dining, theatre at Cadillac Palace, or private galas. Complete flexibility with on-demand vehicle standby.
+                    </p>
+                </div>
+                <button onclick="prefillRoute('Gold Coast, Chicago IL', 'Downtown Theatres & Dining', 'hourly', 'xt6')" class="mt-6 w-full py-3 bg-onyx-950 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-bold text-xs uppercase tracking-wider rounded-lg border border-gold-500/30 transition-all">
+                    Book This Route
+                </button>
+            </div>
+
+            <!-- Route 3 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-6 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-gold-500/10 text-gold-400 text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-gold-500/20">Magnificent Mile ⮂ MDW</span>
+                        <span class="text-white font-serif font-bold text-2xl">$145</span>
+                    </div>
+                    <h3 class="font-semibold text-white text-lg mb-2">Michigan Ave to Midway Airport</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Relax after luxury shopping or business conventions. Direct escort back to Midway terminal gates in supreme comfort and privacy.
+                    </p>
+                </div>
+                <button onclick="prefillRoute('Magnificent Mile, Chicago IL', 'Midway Airport (MDW)', 'airport', 'xt6')" class="mt-6 w-full py-3 bg-onyx-950 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 font-bold text-xs uppercase tracking-wider rounded-lg border border-gold-500/30 transition-all">
+                    Book This Route
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Fleet Showcase -->
+    <section id="fleet" class="bg-onyx-900 border-t border-onyx-800 py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.3em] block mb-2">Pinnacle Fleet Portfolio</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">The Luxury Jano Fleet</h2>
+                <p class="text-gray-400 text-sm mt-3">Exclusively featuring pristine black-on-black executive luxury vehicles maintained to flawless manufacturer standards.</p>
+                <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <!-- Fleet Vehicle Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="switchFleet('xt6')" id="tab-xt6" class="fleet-tab bg-gold-500 text-onyx-950 font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-all">
+                    Cadillac XT6 (Flagship)
+                </button>
+                <button onclick="switchFleet('escalade')" id="tab-escalade" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
+                    Cadillac Escalade ESV
+                </button>
+                <button onclick="switchFleet('sedan')" id="tab-sedan" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
+                    Executive Sedan
+                </button>
+                <button onclick="switchFleet('sprinter')" id="tab-sprinter" class="fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all">
+                    Mercedes Sprinter Van
+                </button>
+            </div>
+
+            <!-- Fleet Content Card -->
+            <div class="bg-onyx-950 border border-gold-900/30 p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Vehicle SVG Graphic Display -->
+                    <div class="lg:col-span-7 flex justify-center items-center py-6 bg-onyx-900/50 rounded-2xl border border-onyx-800">
+                        <svg id="fleetSvg" class="w-full max-w-lg h-auto transition-all duration-500" viewBox="0 0 500 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- SVG render dynamically populated by JS -->
+                        </svg>
+                    </div>
+
+                    <!-- Vehicle Info & Specs -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span id="fleetBadge" class="bg-gold-500/10 text-gold-400 font-bold text-[10px] uppercase px-3 py-1 rounded border border-gold-500/20">
+                                Primary Fleet Standard
+                            </span>
+                            <h3 id="fleetTitle" class="font-serif text-2xl sm:text-3xl font-bold text-white mt-2">
+                                Cadillac XT6 Luxury Crossover
+                            </h3>
+                        </div>
+
+                        <p id="fleetDesc" class="text-gray-400 text-sm leading-relaxed">
+                            The perfect synthesis of executive command and whisper-quiet passenger serenity. Equipped with premium black leather interior, tri-zone climate management, high-speed Wi-Fi, and luggage room for executive airport travel.
+                        </p>
+
+                        <!-- Specs Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-onyx-900 p-3.5 rounded-xl border border-onyx-800">
+                                <span class="text-[10px] text-gray-500 uppercase block font-semibold">Max Passengers</span>
+                                <span id="fleetPassengers" class="text-white font-semibold text-sm">4 Passengers</span>
+                            </div>
+                            <div class="bg-onyx-900 p-3.5 rounded-xl border border-onyx-800">
+                                <span class="text-[10px] text-gray-500 uppercase block font-semibold">Luggage Capacity</span>
+                                <span id="fleetLuggage" class="text-white font-semibold text-sm">3 Large Suitcases</span>
+                            </div>
+                            <div class="bg-onyx-900 p-3.5 rounded-xl border border-onyx-800">
+                                <span class="text-[10px] text-gray-500 uppercase block font-semibold">Hourly Rate</span>
+                                <span id="fleetHourly" class="text-gold-400 font-bold text-sm">$80 / Hour</span>
+                            </div>
+                            <div class="bg-onyx-900 p-3.5 rounded-xl border border-onyx-800">
+                                <span class="text-[10px] text-gray-500 uppercase block font-semibold">Amenities</span>
+                                <span id="fleetAmenities" class="text-white font-semibold text-sm">Wi-Fi & Chilled Water</span>
+                            </div>
+                        </div>
+
+                        <button onclick="selectVehicleForBooking()" class="w-full bg-gradient-to-r from-gold-600 to-gold-400 text-onyx-950 font-bold text-xs uppercase py-3.5 rounded-lg tracking-wider hover:shadow-[0_0_20px_rgba(197,155,39,0.4)] transition-all">
+                            Reserve This Vehicle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.3em] block mb-2">Our Core Services</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Chauffeur Transportation Excellence</h2>
+            <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl group hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-gold-950 border border-gold-800/40 rounded-xl flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Airport Transfers</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Punctual pickups for O'Hare (ORD) and Midway (MDW). Includes automated real-time flight tracking, baggage assistance, and curbside coordination.
+                    </p>
+                </div>
+                <button onclick="selectServiceField('airport')" class="text-gold-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors flex items-center">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl group hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-gold-950 border border-gold-800/40 rounded-xl flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Corporate Travel</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Commanding, pristine transit for executives, board members, and visiting VIPs. High-speed Wi-Fi enabled inside Cadillac XT6 vehicles.
+                    </p>
+                </div>
+                <button onclick="selectServiceField('hourly')" class="text-gold-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors flex items-center">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl group hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-gold-950 border border-gold-800/40 rounded-xl flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-church"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Weddings & Galas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Make your wedding day unforgettable. Luxury red-carpet setup, pristine Cadillac fleet, and custom arrival scheduling for bridal parties.
+                    </p>
+                </div>
+                <button onclick="selectServiceField('event')" class="text-gold-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors flex items-center">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl group hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-gold-950 border border-gold-800/40 rounded-xl flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Hourly Charters</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Dedicated chauffeur at your total command. Flexible multi-stop itineraries across Chicago, Western Suburbs, or North Shore.
+                    </p>
+                </div>
+                <button onclick="selectServiceField('hourly')" class="text-gold-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors flex items-center">
+                    Get Quote <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Jano Limo -->
+    <section id="about" class="bg-onyx-900 border-t border-onyx-800 py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="space-y-6">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.2em]">Our Operational Ethos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">Standards That Elevate Your Journey</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    At Jano Limo, we believe transportation is more than getting from A to B—it's an extension of your standards, an environment for executive productivity, and a commitment to peace of mind.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="bg-onyx-950 p-5 rounded-xl border border-onyx-800 flex items-start space-x-4">
+                        <div class="text-gold-400 text-xl mt-1"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">The 15-Minute Early Policy</h4>
+                            <p class="text-xs text-gray-400 mt-1">Our chauffeurs park outside your pickup location 15 minutes before your scheduled departure time. Zero rush, zero anxiety.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-onyx-950 p-5 rounded-xl border border-onyx-800 flex items-start space-x-4">
+                        <div class="text-gold-400 text-xl mt-1"><i class="fa-solid fa-user-shield"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Absolute Confidentiality</h4>
+                            <p class="text-xs text-gray-400 mt-1">Discretion is fundamental. Conduct sensitive calls or executive discussions in complete privacy.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-onyx-950 p-5 rounded-xl border border-onyx-800 flex items-start space-x-4">
+                        <div class="text-gold-400 text-xl mt-1"><i class="fa-solid fa-route"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Veteran Chicago Route Navigation</h4>
+                            <p class="text-xs text-gray-400 mt-1">Deep familiarity with Kennedy & Eisenhower Expressway patterns, bypass lanes, and private aviation terminals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Dispatch Coverage Map Box -->
+            <div class="bg-onyx-950 p-8 rounded-3xl border border-gold-900/30 shadow-2xl relative">
+                <h3 class="font-serif text-xl font-bold text-white mb-2">Chicagoland Dispatch Network</h3>
+                <p class="text-xs text-gray-400 mb-6">Instant luxury dispatch across Downtown Loop, Suburbs, and Regional Airports</p>
+
+                <div class="bg-onyx-900 rounded-2xl p-6 border border-onyx-800 relative h-80 flex flex-col justify-between overflow-hidden">
+                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#c59b27 1px, transparent 1px); background-size: 16px 16px;"></div>
+
+                    <div class="flex items-center space-x-3 z-10">
+                        <div class="w-3 h-3 bg-gold-400 rounded-full animate-ping"></div>
+                        <div>
+                            <span class="text-xs font-bold text-white block">Downtown Dispatch Central</span>
+                            <span class="text-[10px] text-gray-400 block">The Loop • Gold Coast • River North</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3 z-10 self-end">
+                        <div class="w-3 h-3 bg-gold-500 rounded-full"></div>
+                        <div class="text-right">
+                            <span class="text-xs font-bold text-white block">Airport Priority Hubs</span>
+                            <span class="text-[10px] text-gray-400 block">O'Hare (ORD) • Midway (MDW) • Signature Flight Support</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3 z-10">
+                        <div class="w-3 h-3 bg-gold-500/80 rounded-full"></div>
+                        <div>
+                            <span class="text-xs font-bold text-white block">Suburban Chauffeur Corridors</span>
+                            <span class="text-[10px] text-gray-400 block">Naperville • Lake Forest • Oak Brook • Hinsdale</span>
+                        </div>
+                    </div>
+
+                    <div class="z-10 bg-onyx-950/90 border border-gold-500/30 p-3 rounded-xl text-center">
+                        <span class="text-[10px] text-gold-400 uppercase font-bold block tracking-wider">Average On-Demand Dispatch Time</span>
+                        <span class="text-lg font-bold text-white">Under 25 Minutes Across Metro Area</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Reservation Engine -->
+    <section id="booking" class="bg-gradient-to-b from-onyx-950 to-onyx-900 border-t border-onyx-800 py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.2em]">Online Reservation</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">Reserve Your Private Chauffeur</h2>
+                <p class="text-xs text-gray-400 mt-2">Submit your details to secure instant availability. Zero obligation payment on initial request.</p>
+            </div>
+
+            <div class="bg-onyx-900 border border-gold-900/40 rounded-3xl p-8 shadow-2xl relative">
+                <form id="finalBookingForm" onsubmit="submitFinalReservation(event)" class="space-y-6">
+                    <!-- Name and Email -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Full Name *</label>
+                            <input type="text" id="bookName" placeholder="e.g. Arthur Pendelton" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Email Address *</label>
+                            <input type="email" id="bookEmail" placeholder="e.g. client@company.com" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                        </div>
+                    </div>
+
+                    <!-- Phone and Service -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Mobile Phone (Dispatch Updates) *</label>
+                            <input type="tel" id="bookPhone" placeholder="e.g. (773) 632-9525" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Service Type *</label>
+                            <select id="bookService" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 appearance-none cursor-pointer">
+                                <option value="airport">Airport Chauffeur Transfer</option>
+                                <option value="hourly">Hourly Dedicated Charter</option>
+                                <option value="point">Point-to-Point Luxury Ride</option>
+                                <option value="event">Wedding & Event Escort</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Locations -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Pickup Location Address *</label>
+                            <input type="text" id="bookPickup" placeholder="e.g. Drake Hotel / Residence" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Destination Address</label>
+                            <input type="text" id="bookDropoff" placeholder="e.g. O'Hare Terminal 1 Gate B" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600">
+                        </div>
+                    </div>
+
+                    <!-- Date, Time, Flight -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Pickup Date *</label>
+                            <input type="date" id="bookDate" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Pickup Time *</label>
+                            <input type="time" id="bookTime" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Flight Number (Optional)</label>
+                            <input type="text" id="bookFlight" placeholder="e.g. UA 204" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg py-3 px-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600 uppercase">
+                        </div>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gold-400 font-bold mb-2">Special VIP Instructions</label>
+                        <textarea id="bookNotes" rows="3" placeholder="e.g. Child seat required, extra luggage room, beverage preferences..." class="w-full bg-onyx-950 border border-onyx-800 rounded-lg p-4 text-sm text-gray-200 focus:outline-none focus:border-gold-400 placeholder-gray-600"></textarea>
+                    </div>
+
+                    <!-- Agreement -->
+                    <div class="flex items-start">
+                        <input type="checkbox" id="bookTerms" required class="mt-1 accent-gold-500 mr-3">
+                        <label for="bookTerms" class="text-xs text-gray-400 leading-normal">
+                            I confirm details are accurate and agree to Jano Limo's cancellation policy.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-onyx-950 font-bold text-xs tracking-widest uppercase py-4 rounded-xl hover:shadow-[0_0_25px_rgba(197,155,39,0.5)] transition-all">
+                        Request Reservation Confirmation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Live Reviews -->
+    <section id="reviews" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.3em] block mb-2">Client Experience</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Words From Our Valued Guests</h2>
+            <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div id="reviewsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold-400 space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                        "Jano Limo has transformed executive travel for our firm. Flight tracking is flawless, the Cadillac XT6 is always immaculate, and the drivers are utmost professionals."
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-onyx-800">
+                    <div class="w-10 h-10 bg-gold-500 text-onyx-950 rounded-full font-bold flex items-center justify-center text-sm">AH</div>
+                    <div>
+                        <span class="block text-sm font-semibold text-white">Arthur H. Pendleton</span>
+                        <span class="block text-[10px] text-gray-500">VP, Apex Global Holdings</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold-400 space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                        "We booked Jano for our wedding in downtown Chicago. From arrival timing to red carpet service, everything was spectacular. Highly recommended!"
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-onyx-800">
+                    <div class="w-10 h-10 bg-gold-400 text-onyx-950 rounded-full font-bold flex items-center justify-center text-sm">ER</div>
+                    <div>
+                        <span class="block text-sm font-semibold text-white">Eleanor & Raymond G.</span>
+                        <span class="block text-[10px] text-gray-500">Gold Coast Celebrations</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-onyx-900 border border-onyx-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold-400 space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                        "I rely on Jano Limo for frequent weekly airport trips to O'Hare. Knowing my driver is parked outside early eliminates 100% of travel stress."
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-onyx-800">
+                    <div class="w-10 h-10 bg-gold-600 text-onyx-950 rounded-full font-bold flex items-center justify-center text-sm">MS</div>
+                    <div>
+                        <span class="block text-sm font-semibold text-white">Dr. Marcus Sterling</span>
+                        <span class="block text-[10px] text-gray-500">Northwestern Medicine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-onyx-900 p-8 rounded-3xl border border-onyx-800 text-center max-w-xl mx-auto">
+            <h3 class="font-serif text-lg font-bold text-white mb-2">Have You Traveled With Us?</h3>
+            <p class="text-xs text-gray-400 mb-6">Share your feedback to help us maintain Chicago's highest chauffeur standards.</p>
+            <button onclick="openReviewModal()" class="border border-gold-400/60 hover:bg-gold-500 hover:text-onyx-950 text-gold-400 text-xs font-bold tracking-widest uppercase py-3 px-6 rounded-lg transition-all">
+                Submit Your Review
+            </button>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="bg-onyx-900 border-t border-onyx-800 py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.2em]">Questions & Answers</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-onyx-950 border border-onyx-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-white text-base flex justify-between items-center cursor-pointer" onclick="toggleFaq(1)">
+                        <span>How do airport pickups work with Jano Limo at O'Hare & Midway?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-gold-400 text-xs transition-transform"></i>
+                    </h3>
+                    <div id="faq-answer-1" class="hidden mt-3 text-xs text-gray-400 leading-relaxed">
+                        We continuously monitor your flight arrival time in real time. Once your plane lands, your chauffeur texts you directly. For curbside pickup, your vehicle approaches immediately upon your exit. Meet & Greet inside terminal baggage claim is also available upon request.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-onyx-950 border border-onyx-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-white text-base flex justify-between items-center cursor-pointer" onclick="toggleFaq(2)">
+                        <span>What happens if my flight to Chicago is delayed?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-gold-400 text-xs transition-transform"></i>
+                    </h3>
+                    <div id="faq-answer-2" class="hidden mt-3 text-xs text-gray-400 leading-relaxed">
+                        No stress! Because we track your flight number automatically, your pickup time adjusts seamlessly. There are no surprise wait-time fees for flight delays beyond your control.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-onyx-950 border border-onyx-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-white text-base flex justify-between items-center cursor-pointer" onclick="toggleFaq(3)">
+                        <span>What is your hourly service minimum?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-gold-400 text-xs transition-transform"></i>
+                    </h3>
+                    <div id="faq-answer-3" class="hidden mt-3 text-xs text-gray-400 leading-relaxed">
+                        Our hourly charter service requires a 3-hour minimum booking. This guarantees a dedicated vehicle and chauffeur on standby for your custom multi-stop itinerary.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-onyx-950 border border-onyx-800 rounded-2xl p-6">
+                    <h3 class="font-semibold text-white text-base flex justify-between items-center cursor-pointer" onclick="toggleFaq(4)">
+                        <span>Are child seats or extra luggage options available?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-gold-400 text-xs transition-transform"></i>
+                    </h3>
+                    <div id="faq-answer-4" class="hidden mt-3 text-xs text-gray-400 leading-relaxed">
+                        Yes! Infant, toddler, and booster seats can be requested in the Special Instructions section when booking. Our Cadillac XT6 and Escalade ESV feature spacious luggage space.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="bg-onyx-950 text-gray-500 text-xs py-16 border-t border-onyx-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Branding -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 border border-gold-400 rounded-full flex items-center justify-center bg-onyx-900">
+                        <span class="font-serif text-gold-400 text-base font-bold">J</span>
+                    </div>
+                    <span class="font-serif text-xl font-bold text-white uppercase tracking-wider">JANO <span class="text-gold-400">LIMO</span></span>
+                </div>
+                <p class="text-gray-400 leading-relaxed text-xs">
+                    Premium Chicago limousine and black car chauffeur service. Elevating luxury corporate, event, and airport transport across Chicagoland.
+                </p>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-gold-400">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#services" class="hover:text-gold-400 transition-colors">O'Hare Terminal Transfers</a></li>
+                    <li><a href="#services" class="hover:text-gold-400 transition-colors">Midway Private Aviation</a></li>
+                    <li><a href="#services" class="hover:text-gold-400 transition-colors">Cadillac XT6 Executive Rentals</a></li>
+                    <li><a href="#services" class="hover:text-gold-400 transition-colors">Weddings & Special Events</a></li>
+                </ul>
+            </div>
+
+            <!-- Areas Served -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-gold-400">Coverage Areas</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Chicago Downtown Loop & Gold Coast</li>
+                    <li>Naperville & Western Suburbs</li>
+                    <li>Lake Forest & North Shore</li>
+                    <li>Oak Brook & Hinsdale</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-gold-400">24/7 VIP Dispatch</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center"><i class="fa-solid fa-phone text-gold-400 mr-2.5"></i> <a href="tel:+17736329525" class="hover:text-gold-400 transition-colors">(773) 632-9525</a></li>
+                    <li class="flex items-center"><i class="fa-solid fa-envelope text-gold-400 mr-2.5"></i> <a href="mailto:Janolimo1@gmail.com" class="hover:text-gold-400 transition-colors">Janolimo1@gmail.com</a></li>
+                    <li class="flex items-center"><i class="fa-solid fa-location-dot text-gold-400 mr-2.5"></i> Chicago, IL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-onyx-900 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-600">
+            <p>&copy; 2026 Jano Limo Service Chicago Inc. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <span class="hover:text-gold-400 cursor-pointer">Privacy Framework</span>
+                <span class="hover:text-gold-400 cursor-pointer">Terms of Service</span>
+                <span class="hover:text-gold-400 cursor-pointer">Chauffeur Conduct Code</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Concierge Chatbot Widget -->
+    <div id="conciergeWidget" class="fixed bottom-6 right-6 z-50">
+        <!-- Chat Toggle Button -->
+        <button onclick="toggleChatWindow()" class="bg-gradient-to-r from-gold-600 to-gold-400 text-onyx-950 p-4 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center">
+            <i id="chatIcon" class="fa-solid fa-comments text-xl"></i>
+        </button>
+
+        <!-- Chat Popup Box -->
+        <div id="chatBox" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-onyx-900 border border-gold-400/40 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-96">
+            <!-- Header -->
+            <div class="bg-onyx-950 p-4 border-b border-onyx-800 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-gold-500 text-onyx-950 flex items-center justify-center font-bold text-xs">JL</div>
+                    <div>
+                        <h4 class="font-bold text-white text-xs">Jano Limo Concierge</h4>
+                        <span class="text-[9px] text-emerald-400 block">Online Dispatch Assistant</span>
+                    </div>
+                </div>
+                <button onclick="toggleChatWindow()" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Messages Stream -->
+            <div id="chatMessages" class="p-4 flex-1 overflow-y-auto space-y-3 text-xs">
+                <div class="bg-onyx-950 text-gray-300 p-3 rounded-xl border border-onyx-800 max-w-[85%]">
+                    Hello! Welcome to Jano Limo. How can I assist with your Chicago trip calculation or reservation today?
+                </div>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="p-2 bg-onyx-950 border-t border-onyx-800 flex gap-2 overflow-x-auto text-[10px]">
+                <button onclick="sendQuickChat('Airport transfer rate?')" class="bg-onyx-900 text-gold-400 px-2.5 py-1 rounded-full whitespace-nowrap border border-onyx-800 hover:border-gold-400">Airport Transfer Rate</button>
+                <button onclick="sendQuickChat('Cadillac XT6 capacity?')" class="bg-onyx-900 text-gold-400 px-2.5 py-1 rounded-full whitespace-nowrap border border-onyx-800 hover:border-gold-400">XT6 Capacity</button>
+            </div>
+
+            <!-- Input Bar -->
+            <div class="p-3 bg-onyx-950 border-t border-onyx-800 flex gap-2">
+                <input type="text" id="chatInput" placeholder="Ask concierge..." onkeypress="if(event.key==='Enter') sendChatMessage()" class="w-full bg-onyx-900 border border-onyx-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-400">
+                <button onclick="sendChatMessage()" class="bg-gold-500 text-onyx-950 font-bold px-3 py-2 rounded-lg text-xs"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Receipt Modal -->
+    <div id="receiptModal" class="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50 hidden backdrop-blur-sm">
+        <div class="bg-onyx-900 border border-gold-400/50 rounded-2xl p-6 sm:p-8 max-w-lg w-full relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeReceiptModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-gold-500 text-onyx-950 rounded-full flex items-center justify-center mx-auto text-xl font-bold mb-2">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-white">Reservation Request Confirmed</h3>
+                <p class="text-xs text-gold-400 mt-1">Ref ID: <span id="recID" class="font-bold">JL-98214</span></p>
+            </div>
+
+            <div class="space-y-3 bg-onyx-950 p-4 rounded-xl border border-onyx-800 text-xs">
+                <div class="flex justify-between border-b border-onyx-900 pb-2">
+                    <span class="text-gray-500">Passenger:</span>
+                    <span id="recName" class="font-semibold text-white">--</span>
+                </div>
+                <div class="flex justify-between border-b border-onyx-900 pb-2">
+                    <span class="text-gray-500">Service:</span>
+                    <span id="recService" class="font-semibold text-gold-400">--</span>
+                </div>
+                <div class="flex justify-between border-b border-onyx-900 pb-2">
+                    <span class="text-gray-500">Pickup Location:</span>
+                    <span id="recPickup" class="font-semibold text-white">--</span>
+                </div>
+                <div class="flex justify-between border-b border-onyx-900 pb-2">
+                    <span class="text-gray-500">Destination:</span>
+                    <span id="recDropoff" class="font-semibold text-white">--</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Date & Time:</span>
+                    <span id="recDateTime" class="font-semibold text-white">--</span>
+                </div>
+            </div>
+
+            <p class="text-[10px] text-gray-400 mt-4 text-center">
+                Our 24/7 dispatch office has dispatched notification to your phone. Final confirmation details sent via SMS/Email.
+            </p>
+
+            <button onclick="closeReceiptModal()" class="mt-6 w-full bg-gold-500 hover:bg-gold-400 text-onyx-950 font-bold text-xs uppercase py-3 rounded-lg transition-all">
+                Done
+            </button>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50 hidden backdrop-blur-sm">
+        <div class="bg-onyx-900 border border-gold-400/40 rounded-2xl p-6 max-w-md w-full relative">
+            <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Submit Your Chauffeur Review</h3>
+            
+            <form id="feedbackForm" onsubmit="submitReview(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs text-gold-400 mb-1">Your Full Name</label>
+                    <input type="text" id="reviewerName" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg p-2.5 text-sm text-gray-200 focus:outline-none focus:border-gold-400">
+                </div>
+                <div>
+                    <label class="block text-xs text-gold-400 mb-1">Rating</label>
+                    <select id="reviewerStars" class="w-full bg-onyx-950 border border-onyx-800 rounded-lg p-2.5 text-sm text-gray-200 focus:outline-none focus:border-gold-400">
+                        <option value="5">⭐⭐⭐⭐⭐ (5/5 Excellence)</option>
+                        <option value="4">⭐⭐⭐⭐ (4/5 Great)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs text-gold-400 mb-1">Your Experience</label>
+                    <textarea id="reviewerText" rows="3" required class="w-full bg-onyx-950 border border-onyx-800 rounded-lg p-2.5 text-sm text-gray-200 focus:outline-none focus:border-gold-400"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-onyx-950 font-bold text-xs uppercase py-3 rounded-lg transition-all">
+                    Submit Feedback
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toastNotification" class="fixed bottom-6 left-6 z-50 transform -translate-y-10 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-onyx-900 border border-gold-400/60 p-4 rounded-xl shadow-2xl flex items-center space-x-3">
+            <div class="text-gold-400 text-xl"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+                <h4 class="font-bold text-white text-xs" id="toastTitle">Notification</h4>
+                <p class="text-[10px] text-gray-400" id="toastMsg">Action complete.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application JavaScript Engine -->
+    <script>
+        // Fleet Database
+        const fleetData = {
+            xt6: {
+                title: "Cadillac XT6 Luxury Crossover",
+                badge: "Primary Fleet Standard",
+                desc: "Our flagship crossover delivering pinnacle modern styling, supreme leather seating, tri-zone environmental control, and quiet highway cruising across Chicagoland.",
+                passengers: "4 Passengers",
+                luggage: "3 Large Suitcases",
+                hourly: "$80 / Hour",
+                amenities: "High-Speed Wi-Fi & Chilled Water",
+                svg: `
+                    <ellipse cx="250" cy="130" rx="190" ry="8" fill="#000000" fill-opacity="0.6"/>
+                    <path d="M40 105 L60 82 C65 77, 85 72, 115 72 L180 72 L210 40 C220 30, 255 25, 295 25 L375 25 C395 25, 415 32, 435 60 L455 70 L475 80 C490 85, 490 100, 485 108 L465 112 L100 112 Z" fill="#111317" stroke="#c59b27" stroke-width="2.5"/>
+                    <path d="M215 42 L285 42 L285 67 L185 67 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <path d="M295 42 L375 42 L410 67 L295 67 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="120" cy="115" r="22" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="390" cy="115" r="22" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="120" cy="115" r="14" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <circle cx="390" cy="115" r="14" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <text x="250" y="98" text-anchor="middle" fill="#c59b27" font-family="serif" font-weight="bold" font-size="11">CADILLAC XT6 FLAGSHIP</text>
+                `
+            },
+            escalade: {
+                title: "Cadillac Escalade ESV",
+                badge: "Full Executive SUV",
+                desc: "Unmatched road presence with extended wheelbase capability. Perfect for larger parties, extensive luggage demands, or high-profile executive arrivals.",
+                passengers: "6 Passengers",
+                luggage: "6 Large Suitcases",
+                hourly: "$115 / Hour",
+                amenities: "Rear Entertainment & Refreshments",
+                svg: `
+                    <ellipse cx="250" cy="132" rx="210" ry="8" fill="#000000" fill-opacity="0.6"/>
+                    <path d="M30 110 L45 75 L120 65 L200 30 L410 30 L455 65 L485 85 L485 112 L60 112 Z" fill="#111317" stroke="#c59b27" stroke-width="2.5"/>
+                    <path d="M205 35 L300 35 L300 62 L150 62 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <path d="M310 35 L400 35 L430 62 L310 62 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="110" cy="115" r="24" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="400" cy="115" r="24" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="110" cy="115" r="15" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <circle cx="400" cy="115" r="15" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <text x="260" y="92" text-anchor="middle" fill="#c59b27" font-family="serif" font-weight="bold" font-size="11">CADILLAC ESCALADE ESV</text>
+                `
+            },
+            sedan: {
+                title: "Executive Luxury Sedan",
+                badge: "Classic VIP Transit",
+                desc: "Streamlined luxury sedan engineered for effortless individual or couples travel. Smooth suspension, premium leather trim, and absolute privacy.",
+                passengers: "3 Passengers",
+                luggage: "2 Suitcases",
+                hourly: "$75 / Hour",
+                amenities: "Executive Workstation & USB-C",
+                svg: `
+                    <ellipse cx="250" cy="128" rx="180" ry="7" fill="#000000" fill-opacity="0.6"/>
+                    <path d="M50 105 L80 80 L160 75 L210 45 L360 45 L415 75 L465 95 L465 108 L80 108 Z" fill="#111317" stroke="#c59b27" stroke-width="2.5"/>
+                    <path d="M215 48 L285 48 L285 72 L180 72 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <path d="M295 48 L355 48 L390 72 L295 72 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="125" cy="110" r="20" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="385" cy="110" r="20" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="125" cy="110" r="12" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <circle cx="385" cy="110" r="12" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <text x="250" y="95" text-anchor="middle" fill="#c59b27" font-family="serif" font-weight="bold" font-size="10">EXECUTIVE LUXURY SEDAN</text>
+                `
+            },
+            sprinter: {
+                title: "Mercedes-Benz Sprinter Jet Van",
+                badge: "Group Luxury Shuttle",
+                desc: "Custom high-roof jet interior featuring captain's chairs, ambient ceiling illumination, privacy partition, and standing room for corporate groups.",
+                passengers: "14 Passengers",
+                luggage: "12 Large Suitcases",
+                hourly: "$165 / Hour",
+                amenities: "Full Bar Setup & Smart TV",
+                svg: `
+                    <ellipse cx="250" cy="135" rx="220" ry="9" fill="#000000" fill-opacity="0.6"/>
+                    <path d="M30 115 L30 40 L380 40 L450 70 L480 100 L480 118 L40 118 Z" fill="#111317" stroke="#c59b27" stroke-width="2.5"/>
+                    <path d="M385 45 L435 68 L385 68 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1.5"/>
+                    <path d="M100 50 L160 50 L160 80 L100 80 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1"/>
+                    <path d="M180 50 L240 50 L240 80 L180 80 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1"/>
+                    <path d="M260 50 L320 50 L320 80 L260 80 Z" fill="#1E293B" stroke="#c59b27" stroke-width="1"/>
+                    <circle cx="110" cy="120" r="22" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="390" cy="120" r="22" fill="#0A0B0D" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="110" cy="120" r="14" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <circle cx="390" cy="120" r="14" fill="#111317" stroke="#d3b03b" stroke-width="2"/>
+                    <text x="240" y="100" text-anchor="middle" fill="#c59b27" font-family="serif" font-weight="bold" font-size="11">MERCEDES SPRINTER JET VAN</text>
+                `
+            }
+        };
+
+        let currentFleetKey = 'xt6';
+
+        // Initialize Page
+        window.addEventListener('load', () => {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('quoteDate').value = today;
+            document.getElementById('bookDate').value = today;
+            switchFleet('xt6');
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Switch Fleet Tab
+        function switchFleet(key) {
+            currentFleetKey = key;
+            const item = fleetData[key];
+
+            document.querySelectorAll('.fleet-tab').forEach(btn => {
+                btn.className = "fleet-tab bg-onyx-950 text-gray-400 hover:text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider border border-onyx-800 transition-all";
+            });
+
+            document.getElementById(`tab-${key}`).className = "fleet-tab bg-gold-500 text-onyx-950 font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-all";
+
+            document.getElementById('fleetTitle').innerText = item.title;
+            document.getElementById('fleetBadge').innerText = item.badge;
+            document.getElementById('fleetDesc').innerText = item.desc;
+            document.getElementById('fleetPassengers').innerText = item.passengers;
+            document.getElementById('fleetLuggage').innerText = item.luggage;
+            document.getElementById('fleetHourly').innerText = item.hourly;
+            document.getElementById('fleetAmenities').innerText = item.amenities;
+            document.getElementById('fleetSvg').innerHTML = item.svg;
+        }
+
+        // Calculate Rate Quote
+        function calculateQuote(event) {
+            event.preventDefault();
+            const service = document.getElementById('quoteService').value;
+            const vehicle = document.getElementById('quoteVehicle').value;
+            const pickup = document.getElementById('quotePickup').value;
+            const dropoff = document.getElementById('quoteDropoff').value;
+            const metric = parseInt(document.getElementById('quoteMetric').value) || 2;
+
+            let price = 110;
+            if (vehicle === 'escalade') price += 45;
+            if (vehicle === 'sprinter') price += 90;
+
+            if (service === 'hourly') {
+                price = (price * 0.75) * Math.max(metric, 3);
+            } else if (service === 'airport') {
+                price += 30;
+            } else if (service === 'event') {
+                price = price * 2.2;
+            }
+
+            price = Math.round(price);
+
+            document.getElementById('calculatedPrice').innerText = price;
+            document.getElementById('calculatedDetails').innerText = `${fleetData[vehicle]?.title || 'Cadillac XT6'} • ${service.toUpperCase()}`;
+            document.getElementById('quoteResult').classList.remove('hidden');
+
+            // Copy to booking form
+            document.getElementById('bookPickup').value = pickup;
+            document.getElementById('bookDropoff').value = dropoff;
+            document.getElementById('bookService').value = service;
+
+            showToast('Rate Calculated', `Estimated total: $${price}`);
+        }
+
+        // Prefill Route
+        function prefillRoute(pickup, dropoff, service, vehicle) {
+            document.getElementById('quotePickup').value = pickup;
+            document.getElementById('quoteDropoff').value = dropoff;
+            document.getElementById('quoteService').value = service;
+            if(vehicle) document.getElementById('quoteVehicle').value = vehicle;
+
+            document.getElementById('heroQuoteForm').scrollIntoView({ behavior: 'smooth' });
+            showToast('Route Loaded', 'Select pickup date and click Calculate Rate!');
+        }
+
+        function selectServiceField(service) {
+            document.getElementById('quoteService').value = service;
+            document.getElementById('heroQuoteForm').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function selectVehicleForBooking() {
+            document.getElementById('quoteVehicle').value = currentFleetKey;
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+            showToast('Vehicle Selected', `${fleetData[currentFleetKey].title} set for reservation.`);
+        }
+
+        function bookCalculatedQuote() {
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Flight Status Simulator
+        function trackFlightStatus() {
+            const query = document.getElementById('flightQuery').value.trim();
+            if(!query) {
+                showToast('Input Required', 'Please enter a flight number or reservation ID.');
+                return;
+            }
+
+            document.getElementById('resFlightNo').innerText = query.toUpperCase();
+            document.getElementById('trackerResult').classList.remove('hidden');
+            showToast('Status Retrieved', `Live dispatch synced for ${query.toUpperCase()}`);
+        }
+
+        // Submit Reservation
+        function submitFinalReservation(event) {
+            event.preventDefault();
+            const name = document.getElementById('bookName').value;
+            const service = document.getElementById('bookService').options[document.getElementById('bookService').selectedIndex].text;
+            const pickup = document.getElementById('bookPickup').value;
+            const dropoff = document.getElementById('bookDropoff').value || 'As Directed';
+            const date = document.getElementById('bookDate').value;
+            const time = document.getElementById('bookTime').value;
+
+            document.getElementById('recID').innerText = 'JL-' + Math.floor(10000 + Math.random() * 90000);
+            document.getElementById('recName').innerText = name;
+            document.getElementById('recService').innerText = service;
+            document.getElementById('recPickup').innerText = pickup;
+            document.getElementById('recDropoff').innerText = dropoff;
+            document.getElementById('recDateTime').innerText = `${date} at ${time}`;
+
+            document.getElementById('receiptModal').classList.remove('hidden');
+            document.getElementById('finalBookingForm').reset();
+        }
+
+        function closeReceiptModal() {
+            document.getElementById('receiptModal').classList.add('hidden');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Concierge Chat
+        function toggleChatWindow() {
+            document.getElementById('chatBox').classList.toggle('hidden');
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const msg = input.value.trim();
+            if(!msg) return;
+
+            appendChat(msg, true);
+            input.value = '';
+
+            setTimeout(() => {
+                let reply = "Our 24/7 dispatch is ready to assist. You can also call us directly at (773) 632-9525!";
+                if(msg.toLowerCase().includes('rate') || msg.toLowerCase().includes('price')) {
+                    reply = "Our rates start at $80/hr for our flagship Cadillac XT6 crossover, or flat rates of $160 for O'Hare transfers.";
+                } else if(msg.toLowerCase().includes('xt6')) {
+                    reply = "The Cadillac XT6 is our primary luxury crossover, accommodating up to 4 passengers with 3 suitcases.";
+                }
+                appendChat(reply, false);
+            }, 800);
+        }
+
+        function sendQuickChat(text) {
+            document.getElementById('chatInput').value = text;
+            sendChatMessage();
+        }
+
+        function appendChat(text, isUser) {
+            const container = document.getElementById('chatMessages');
+            const div = document.createElement('div');
+            div.className = isUser 
+                ? "bg-gold-500 text-onyx-950 p-3 rounded-xl max-w-[85%] ml-auto font-medium" 
+                : "bg-onyx-950 text-gray-300 p-3 rounded-xl border border-onyx-800 max-w-[85%]";
+            div.innerText = text;
+            container.appendChild(div);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Reviews System
+        function openReviewModal() {
+            document.getElementById('reviewModal').classList.remove('hidden');
+        }
+
+        function closeReviewModal() {
+            document.getElementById('reviewModal').classList.add('hidden');
+        }
+
+        function submitReview(e) {
+            e.preventDefault();
+            const name = document.getElementById('reviewerName').value;
+            const text = document.getElementById('reviewerText').value;
+
+            const grid = document.getElementById('reviewsGrid');
+            const card = document.createElement('div');
+            card.className = "bg-onyx-900 border border-gold-400/40 p-8 rounded-2xl flex flex-col justify-between";
+            card.innerHTML = `
+                <div>
+                    <div class="flex text-gold-400 space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed mb-6">"${text}"</p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-onyx-800">
+                    <div class="w-10 h-10 bg-gold-500 text-onyx-950 rounded-full font-bold flex items-center justify-center text-sm">${name.substring(0,2).toUpperCase()}</div>
+                    <div>
+                        <span class="block text-sm font-semibold text-white">${name}</span>
+                        <span class="block text-[10px] text-gray-500">Verified Chicago Guest</span>
+                    </div>
+                </div>
+            `;
+            grid.prepend(card);
+            closeReviewModal();
+            showToast('Review Published', 'Thank you for your feedback!');
+            document.getElementById('feedbackForm').reset();
+        }
+
+        // Toast Helper
+        function showToast(title, msg) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastMsg').innerText = msg;
+
+            toast.classList.remove('-translate-y-10', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('-translate-y-10', 'opacity-0');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
